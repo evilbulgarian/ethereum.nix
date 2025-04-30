@@ -34,7 +34,7 @@ rustPlatform.buildRustPackage rec {
     owner = "sigp";
     repo = pname;
     rev = "v${version}";
-    hash = lib.fakeSha256;
+    hash = "sha256-0nClqRSLwKnTNAMsvX5zzN2PbVJ51xtQv48cHSqHLAY=";
   };
 
   cargoLock = {
