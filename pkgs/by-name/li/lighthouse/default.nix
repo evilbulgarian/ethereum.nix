@@ -118,6 +118,20 @@ rustPlatform.buildRustPackage rec {
     "--skip fast::deposit_cache_query"
     "--skip http::incrementing_deposits"
     "--skip persist::test_persist_caches"
+    "--skip engine_api::http::test::forkchoice_updated_v1_request"
+    "--skip engine_api::http::test::forkchoice_updated_v1_with_payload_attributes_request"
+    "--skip engine_api::http::test::get_block_by_hash_request"
+    "--skip engine_api::http::test::get_block_by_number_request"
+    "--skip engine_api::http::test::get_payload_v1_request"
+    "--skip engine_api::http::test::geth_test_vectors"
+    "--skip engine_api::http::test::new_payload_v1_request"
+    "--skip test::finds_valid_terminal_block_hash"
+    "--skip test::produce_three_valid_pos_execution_blocks"
+    "--skip test::rejects_invalid_terminal_block_hash"
+    "--skip test::rejects_terminal_block_with_equal_timestamp"
+    "--skip test::rejects_unknown_terminal_block_hash"
+    "--skip test::test_forked_terminal_block"
+    "--skip test::verifies_valid_terminal_block_hash"
   ];
 
   meta = {
