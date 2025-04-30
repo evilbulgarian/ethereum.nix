@@ -77,7 +77,7 @@ rustPlatform.buildRustPackage rec {
   LIGHTHOUSE_DEPOSIT_CONTRACT_TESTNET_URL = "file:${slasherContractTestnetSrc}";
 
   # This is needed by the unit tests.
-  FORK_NAME = "capella";
+  FORK_NAME = "pectra";
 
   cargoTestFlags = [
     "--workspace"
