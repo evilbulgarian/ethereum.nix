@@ -47,12 +47,12 @@
         # meta.platforms = [system];
         meta.platforms = ["x86_64-linux" "aarch64-linux"];
       });
-      geth = callPackage ./by-name/ge/geth {};
+      geth = callPackageUnstable ./by-name/ge/geth {};
       geth-sealer = callPackage ./by-name/ge/geth-sealer {};
       heimdall = callPackage ./by-name/he/heimdall {};
       lighthouse = callPackageUnstable ./by-name/li/lighthouse {inherit foundry;};
       mcl = callPackage ./by-name/mc/mcl {};
-      mev-boost = callPackage ./by-name/me/mev-boost {inherit blst;};
+      mev-boost = callPackageUnstable ./by-name/me/mev-boost {inherit blst;};
       mev-boost-builder = callPackage ./by-name/me/mev-boost-builder {inherit blst;};
       mev-boost-relay = callPackage ./by-name/me/mev-boost-relay {inherit blst;};
       mev-rs = callPackage ./by-name/me/mev-rs {};
