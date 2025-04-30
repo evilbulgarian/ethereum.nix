@@ -91,6 +91,11 @@ rustPlatform.buildRustPackage rec {
     "--exclude watch"
     "--exclude web3signer_tests"
     "--exclude lighthouse_metrics"
+    "--exclude deposit_tree"
+    "--exclude eth1_cache"
+    "--exclude fast"
+    "--exclude http"
+    "--exclude persist"
   ];
 
   nativeCheckInputs = [
