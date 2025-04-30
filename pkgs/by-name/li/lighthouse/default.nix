@@ -91,11 +91,6 @@ rustPlatform.buildRustPackage rec {
     "--exclude watch"
     "--exclude web3signer_tests"
     "--exclude lighthouse_metrics"
-    "--exclude deposit_tree"
-    "--exclude eth1_cache"
-    "--exclude fast"
-    "--exclude http"
-    "--exclude persist"
   ];
 
   nativeCheckInputs = [
@@ -113,6 +108,16 @@ rustPlatform.buildRustPackage rec {
     "--skip tests::check_candidate_order"
     "--skip tests::first_success_should_try_nodes_in_order"
     "--skip tests::update_all_candidates_should_update_sync_status"
+    "--skip deposit_tree::cache_consistency"
+    "--skip deposit_tree::double_update"
+    "--skip deposit_tree::updating"
+    "--skip eth1_cache::big_skip"
+    "--skip eth1_cache::double_update"
+    "--skip eth1_cache::pruning"
+    "--skip eth1_cache::simple_scenario"
+    "--skip fast::deposit_cache_query"
+    "--skip http::incrementing_deposits"
+    "--skip persist::test_persist_caches"
   ];
 
   meta = {
