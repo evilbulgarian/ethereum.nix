@@ -11,6 +11,7 @@
 , rustPlatform
 , postgresql
 , foundry
+, pkg-config
 ,
 }:
 let
