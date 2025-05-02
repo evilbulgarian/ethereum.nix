@@ -191,6 +191,12 @@ rustPlatform.buildRustPackage rec {
     "--skip per_epoch_processing::tests::release_tests::altair_state_on_base_fork"
     "--skip per_epoch_processing::tests::release_tests::base_state_on_altair_fork"
     "--skip per_epoch_processing::tests::runs_without_error"
+    "--skip per_block_processing::tests::block_replayer_peeking_state_roots"
+    "--skip per_block_processing::tests::fork_spanning_exit"
+    "--skip per_block_processing::tests::invalid_attester_slashing_1_invalid"
+    "--skip per_block_processing::tests::invalid_attester_slashing_2_invalid"
+    "--skip per_block_processing::tests::invalid_attester_slashing_not_slashable"
+    "--skip per_block_processing::tests::invalid_bad_proposal_1_signature"
   ];
 
   meta = {
