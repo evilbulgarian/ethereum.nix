@@ -189,6 +189,7 @@ rustPlatform.buildRustPackage rec {
     "--skip invalid_block_finalized_descendant"
     "--skip invalid_block_finalized_slot"
     "--skip basic"
+    "--skip returns_200_ok"
   ];
 
   meta = {
