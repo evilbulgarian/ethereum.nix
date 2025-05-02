@@ -42,7 +42,7 @@ rustPlatform.buildRustPackage rec {
     ./use-system-sqlite.patch
   ];
 
-  cargoHash = "sha256-Opkz3EVKw0M4LeWMsn1NlSw/Fg7cWVqnDJRRTPYYlLo=";
+  cargoHash = "sha256-tQVZXZzcit4seBgmW4WEyNOkLzswX/I36DphORb7w30=";
   useFetchCargoVendor = true;
 
   enableParallelBuilding = true;
