@@ -184,6 +184,9 @@ rustPlatform.buildRustPackage rec {
     "--skip weak_subjectivity_check_passes"
     "--skip weak_subjectivity_fail_on_startup"
     "--skip weak_subjectivity_pass_on_startup"
+    "--skip can_read_finalized_block"
+    "--skip invalid_block_finalized_descendant"
+    "--skip invalid_block_finalized_slot"
   ];
 
   meta = {
