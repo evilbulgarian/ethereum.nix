@@ -60,7 +60,10 @@ rustPlatform.buildRustPackage rec {
 
   buildFeatures = [ "modern" "slasher-lmdb" ];
 
+  # Needed to get openssl-sys to use pkg-config.
   OPENSSL_NO_VENDOR = true;
+  OPENSSL_DIR = "${lib.getDev openssl}";
+  OPENSSL_LIB_DIR = "${lib.getLib openssl}/lib";
 
   # common crate tries to fetch the compiled version from an URL
   # see: https://github.com/sigp/lighthouse/blob/stable/common/deposit_contract/build.rs#L30
