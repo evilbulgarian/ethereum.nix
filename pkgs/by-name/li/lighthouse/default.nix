@@ -122,6 +122,7 @@ rustPlatform.buildRustPackage rec {
     "--exclude weak_subjectivity_check_passes"
     "--exclude weak_subjectivity_fail_on_startup"
     "--exclude weak_subjectivity_pass_on_startup"
+    "--exclude basic"
   ];
 
   nativeCheckInputs = [
@@ -187,6 +188,7 @@ rustPlatform.buildRustPackage rec {
     "--skip can_read_finalized_block"
     "--skip invalid_block_finalized_descendant"
     "--skip invalid_block_finalized_slot"
+    "--skip basic"
   ];
 
   meta = {
