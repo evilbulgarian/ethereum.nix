@@ -70,15 +70,6 @@ rustPlatform.buildRustPackage rec {
   # see: https://github.com/sigp/lighthouse/blob/stable/common/deposit_contract/build.rs#L33
   LIGHTHOUSE_DEPOSIT_CONTRACT_TESTNET_URL = "file:${slasherContractTestnetSrc}";
 
-  passthru = {
-    tests.version = testers.testVersion {
-      package = lighthouse;
-      command = "lighthouse --version";
-      version = "v${lighthouse.version}";
-    };
-    updateScript = nix-update-script { };
-  };
-
   # This is needed by the unit tests.
   FORK_NAME = "capella";
 
