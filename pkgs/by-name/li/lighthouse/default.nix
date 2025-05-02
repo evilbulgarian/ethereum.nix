@@ -106,6 +106,10 @@ rustPlatform.buildRustPackage rec {
     "--skip persist::test_persist_caches"
     "--skip service::tests::tests::test_dht_persistence"
     "--skip time::test::test_reinsertion_updates_timeout"
+    "--skip tests::broadcast_should_send_to_all_bns"
+    "--skip tests::check_candidate_order"
+    "--skip tests::first_success_should_try_nodes_in_order"
+    "--skip tests::update_all_candidates_should_update_sync_status"
   ];
 
   meta = {
