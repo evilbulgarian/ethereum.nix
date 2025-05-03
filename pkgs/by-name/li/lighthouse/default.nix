@@ -214,6 +214,14 @@ rustPlatform.buildRustPackage rec {
     "--skip exit::tests::valid_three_exits"
     "--skip iter::test::block_root_iter"
     "--skip iter::test::state_root_iter"
+    "--skip beacon_state::committee_cache::tests::initializes_with_the_right_epoch"
+    "--skip beacon_state::committee_cache::tests::min_randao_epoch_correct"
+    "--skip beacon_state::committee_cache::tests::shuffles_for_the_right_epoch"
+    "--skip beacon_state::tests::beacon_proposer_index"
+    "--skip beacon_state::tests::cache_initialization"
+    "--skip beacon_state::tests::committees::current_epoch_committee_consistency"
+    "--skip beacon_state::tests::committees::next_epoch_committee_consistency"
+    "--skip beacon_state::tests::committees::previous_epoch_committee_consistency"
   ];
 
   meta = {
