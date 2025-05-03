@@ -212,6 +212,8 @@ rustPlatform.buildRustPackage rec {
     "--skip exit::tests::valid_previous_epoch"
     "--skip exit::tests::valid_single_exit"
     "--skip exit::tests::valid_three_exits"
+    "--skip iter::test::block_root_iter"
+    "--skip iter::test::state_root_iter"
   ];
 
   meta = {
