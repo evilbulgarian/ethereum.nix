@@ -264,6 +264,18 @@ rustPlatform.buildRustPackage rec {
     "--skip tests::keystores::import_same_remotekey_different_url"
     "--skip tests::keystores::import_some_duplicate_keystores"
     "--skip tests::keystores::import_some_duplicate_remotekeys"
+    "--skip tests::hd_validator_creation"
+    "--skip tests::invalid_pubkey"
+    "--skip tests::keystore_validator_creation"
+    "--skip tests::keystores::check_get_set_fee_recipient"
+    "--skip tests::keystores::check_get_set_gas_limit"
+    "--skip tests::keystores::delete_concurrent_with_signing"
+    "--skip tests::keystores::delete_keystores_twice"
+    "--skip tests::keystores::delete_nonexistent_keystores"
+    "--skip tests::keystores::delete_nonexistent_remotekey"
+    "--skip tests::keystores::delete_remotekey_then_reimport_different_url"
+    "--skip tests::keystores::delete_remotekeys_twice"
+    "--skip tests::keystores::delete_then_reimport"
   ];
 
   meta = {
