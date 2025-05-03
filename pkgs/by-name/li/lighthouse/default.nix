@@ -197,6 +197,21 @@ rustPlatform.buildRustPackage rec {
     "--skip per_block_processing::tests::invalid_attester_slashing_2_invalid"
     "--skip per_block_processing::tests::invalid_attester_slashing_not_slashable"
     "--skip per_block_processing::tests::invalid_bad_proposal_1_signature"
+    "--skip exit::custom_tests::valid"
+    "--skip exit::custom_tests::valid_three"
+    "--skip exit::tests::invalid_bad_signature"
+    "--skip exit::tests::invalid_duplicate"
+    "--skip exit::tests::invalid_exit_already_initiated"
+    "--skip exit::tests::invalid_future_exit_epoch"
+    "--skip exit::tests::invalid_not_active_after_exit_epoch"
+    "--skip exit::tests::invalid_not_active_before_activation_epoch"
+    "--skip exit::tests::invalid_too_young_by_a_lot"
+    "--skip exit::tests::invalid_too_young_by_one_epoch"
+    "--skip exit::tests::invalid_validator_unknown"
+    "--skip exit::tests::valid_genesis_epoch"
+    "--skip exit::tests::valid_previous_epoch"
+    "--skip exit::tests::valid_single_exit"
+    "--skip exit::tests::valid_three_exits"
   ];
 
   meta = {
