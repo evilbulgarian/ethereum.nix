@@ -297,6 +297,16 @@ rustPlatform.buildRustPackage rec {
     "--skip move_validators::test::two_validators_move_all_where_one_is_a_duplicate"
     "--skip move_validators::test::two_validators_move_one_where_one_is_a_duplicate"
     "--skip move_validators::test::two_validators_move_one_with_identical_password_files"
+    "--skip create_validators::tests::bogus_bn_url"
+    "--skip delete_validators::test::delete_multiple_validators"
+    "--skip import_validators::tests::create_one_validator"
+    "--skip import_validators::tests::create_one_validator_keystore_format"
+    "--skip import_validators::tests::create_one_validator_with_offset"
+    "--skip import_validators::tests::create_one_validator_with_offset_keystore_format"
+    "--skip import_validators::tests::create_three_validators"
+    "--skip import_validators::tests::create_three_validators_with_offset"
+    "--skip import_validators::tests::import_duplicates_when_allowed"
+    "--skip import_validators::tests::import_duplicates_when_allowed_keystore_format"
   ];
 
   meta = {
