@@ -32,7 +32,7 @@ buildGoModule rec {
   };
 
   proxyVendor = true;
-  vendorHash = "sha256-1FuVdx84jvMBo8VO6q+WaFpK3hWn88J7p8vhIDsQHPM=";
+  vendorHash = "sha256-R9Qg6estiyjMAwN6tvuN9ZuE7+JqjEy+qYOPAg5lIJY=";
 
   ldflags = [ "-s" "-w" ];
 
